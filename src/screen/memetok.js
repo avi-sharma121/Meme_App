@@ -34,17 +34,20 @@ function memetok(props) {
     <View style={styles.container}>
       <View
         style={{
-          height: '100%',
+          height: '90%',
           weight: '100%',
           backgroundColor: 'white',
           alignItems: 'center',
-          flex: 0.9,
+          flex: 1,
+          margin: 20,
+          borderRadius: 30,
+          overflow: 'hidden',
         }}>
         <Image
           source={{
             uri: image,
           }}
-          style={{width: '100%', height: '95%', marginTop: 0}}
+          style={{width: '100%', height: '100%', marginTop: 0}}
         />
       </View>
       <View

@@ -6,7 +6,8 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 const Favorite = () => {
   return (
     <View style={styles.container}>
-      <View style={{flex: 3.5}}>
+      <View
+        style={{flex: 3.5, margin: 15, borderRadius: 30, overflow: 'hidden'}}>
         <Image
           source={{
             uri:

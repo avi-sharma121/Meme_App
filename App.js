@@ -2,9 +2,9 @@ import * as React from 'react';
 import {StatusBar} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import Memetok from './screen/memetok';
-import Favourites from './screen/favourites';
-import About from './screen/about';
+import Memetok from './src/screen/memetok';
+import Favourites from './src/screen/favourites';
+import About from './src/screen/about';
 import Fontisto from 'react-native-vector-icons/Fontisto';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
@@ -45,6 +45,7 @@ export default function App() {
             activeBackgroundColor: '#ff9999',
             inactiveTintColor: '#30475e',
             inactiveBackgroundColor: '#ff9999',
+            showLabel: false,
           }}>
           <Tab.Screen name="MemeTok" component={Memetok} />
           <Tab.Screen name="Favourites" component={Favourites} />
